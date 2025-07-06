@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgroMart - Online Grocery for Farm Products</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f9f6;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      background: #388E3C;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .product-card h3 {
+      margin: 10px 0 5px;
+    }
+    .product-card p {
+      color: #444;
+      font-size: 0.9em;
+    }
+    .product-card button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      background: #2E7D32;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AgroMart</h1>
+    <p>Fresh Farm Produce Delivered to Your Door</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Fruits</a>
+    <a href="#">Vegetables</a>
+    <a href="#">Dairy</a>
+    <a href="#">Cart 🛒</a>
+  </nav>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x150?text=Tomatoes" alt="Tomatoes">
+      <h3>Fresh Tomatoes</h3>
+      <p>₹30/kg · From: Reddy Farms</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x150?text=Carrots" alt="Carrots">
+      <h3>Organic Carrots</h3>
+      <p>₹40/kg · From: Green Field</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x150?text=Milk" alt="Milk">
+      <h3>Farm Fresh Milk</h3>
+      <p>₹25/litre · From: DairyCo</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x150?text=Spinach" alt="Spinach">
+      <h3>Organic Spinach</h3>
+      <p>₹15/bunch · From: LeafyLand</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 AgroMart | Empowering Farmers. Feeding Families.</p>
+  </footer>
+
+</body>
+</html>
